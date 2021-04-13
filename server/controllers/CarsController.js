@@ -6,7 +6,7 @@ export class CarsController extends BaseController {
     super('/api/cars')
     this.router
       .get("/", this.getAll)
-      .get("/:id/", this.getById)
+      .get("/:id", this.getById)
       .post("", this.create)
       .put("/:id", this.edit) // ...../api/cars/_____
       .delete("/:id", this.delete)
